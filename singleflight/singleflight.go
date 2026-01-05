@@ -1,4 +1,4 @@
-package main
+package singleflight
 
 import (
 	"context"
@@ -39,8 +39,4 @@ func getHotData(key string) string {
 		return data, nil
 	})
 	return val.(string)
-}
-
-func main() {
-	fmt.Printf("✅ 热点数据：%s\n", getHotData("goods:660390230106"))
 }
