@@ -1,4 +1,4 @@
-module github.com/LN-lang/singleflightt
+module github.com/LN-lang/singleflight
 
 go 1.25.5
 
