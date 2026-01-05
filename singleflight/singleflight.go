@@ -16,7 +16,7 @@ var (
 )
 
 // 核心：热点数据获取（缓存+请求合并）
-func getHotData(key string) string {
+func GetHotData(key string) string {
 	// 1. 查缓存
 	if v, _ := rdb.Get(ctx, key).Result(); v != "" {
 		return v
